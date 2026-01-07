@@ -1,0 +1,46 @@
+@media (max-width: 1248px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;}
+ }
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);}
+
+    .product-content {
+        column-gap: 29px;
+        row-gap: 39px;}
+
+    .footer__logo {
+        display: none;}
+
+    .for {
+        &__item {
+            height: 265px;}
+        &__content {
+            gap: 30px;}
+        &__item_big {
+            height: 268px;}
+    }
+
+        // Корзина
+    .cart {
+        gap: 31px;
+        grid-template-columns: repeat(8, 1fr);
+    
+        &__form {
+            margin-top: 33px;}}
+}
+
+@media (min-width: 768px) and (max-width: 835px) {
+
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;}
+
+    .filter-form {
+        right: -236px;}
+}
+
+

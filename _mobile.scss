@@ -1,0 +1,292 @@
+@media (max-width: 768px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header {
+    border-bottom: none;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+
+    &__input {
+      display: none;
+    }
+  }
+
+  .nav {
+    display: none;
+
+    &-mob {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+
+      &__link {
+        --icon-color: #ffffff;
+
+        svg path {
+          fill: var(--icon-color);
+        }
+
+        &:hover {
+          --icon-color: #000000;
+
+          svg path {
+            fill: #000000;
+          }
+
+          rect {
+            fill: #000000;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-mob__link svg path {
+    fill: #ffffff;
+  }
+
+  .nav-mob__link:hover svg path {
+    fill: #000000;
+  }
+
+  .top-cart {
+    padding-top: 32px;
+  }
+
+  .top-catalog {
+    padding-top: 32px;
+  }
+
+  .header__img-logo {
+    width: 99px;
+    height: 22px;
+  }
+
+  .top {
+    padding-top: 32px;
+
+    &__content {
+      margin-top: 29px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 59px;
+      text-align: center;
+    }
+
+    &__lozung {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+  }
+
+  .block-title {
+    font-size: 24px;
+    margin-top: 32px;
+  }
+
+  .for {
+    &__item {
+      height: 375px;
+    }
+
+    &__item_big {
+      height: 243px;
+    }
+
+    &__items {
+      grid-column: 1 / -1;
+      height: 375px;
+
+      &_big {
+        height: 244px;
+      }
+    }
+
+    &__item-title {
+      font-size: 28px;
+    }
+
+    &__content_mob {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  .product {
+    max-width: 343px;
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__price {
+      font-size: 18px;
+    }
+
+    &-content {
+      row-gap: 33px;
+    }
+
+    &__about {
+      margin-bottom: 8px;
+    }
+  }
+
+  .product-content {
+    max-width: 715px;
+    padding-left: calc(50% - 715px / 2);
+  }
+
+  // Корзина
+  .cart {
+    gap: 19px;
+    grid-template-columns: repeat(4, 1fr);
+
+    &__content {
+      grid-column: span 4;
+    }
+
+    &__item {
+      padding-top: 18px;
+    }
+
+    &__form {
+      grid-column: span 3;
+      margin-top: 29px;
+      margin-bottom: 16px;
+    }
+
+    &__name-box {
+      display: none;
+    }
+
+    &__info {
+      width: 276px; // 200px + 76
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    &-title {
+      font-size: 18px;
+    }
+
+    &-text {
+      font-size: 12px;
+    }
+
+    &-price {
+      font-size: 12px;
+    }
+  }
+
+  .footer {
+    
+    &__info {
+        gap: 100px;
+    }
+  }
+}
+
+
+@media (max-width: 746px) {
+
+    .product-content {
+            justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .filter {
+        &-form {
+        right: 0px;
+        }
+
+        &-form__content {
+        min-width: unset;
+        max-height: unset;
+        }
+    }
+
+  // Корзина
+    .top-cart__title {
+        font-size: 48px;
+        text-align: center;
+        margin-top: 82px;
+    }
+
+  .cart {
+        margin-top: 92px;
+
+        &__img {
+        display: none;
+        }
+
+        &__form {
+        grid-column: span 4;
+        }
+    }
+
+
+    .footer {
+        &__content {
+            justify-content: center;
+        }
+    }
+}
+
+
+@media (max-width: 463px) {
+  .filter-form {
+    right: -102px;
+  }
+
+  // Корзина
+  .cart {
+    &__info {
+      width: 253px;
+      margin-left: unset;
+      margin-right: unset;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .top__title {
+    font-size: 36px;
+  }
+
+  .cart-popup-input {
+    width: 20px;
+    height: 51px;
+  }
+
+  .cart__button {
+    width: 200px;
+  }
+
+  .footer__form-email,
+  .footer__form-button,
+  .cart__info,
+  .cart__title,
+  .cart__price,
+  .cart__input-name {
+    width: auto;
+  }
+}
